@@ -4,7 +4,7 @@ Ubuntu Xenial based Docker image for SNMP trap receiver, together with other SNM
 
 To start
 
-    docker run -d --name snmptrap-receiver -v $PWD/snmp:/var/log/snmp lidaheemc/docker-snmp
+    docker run -d -p 162:162/udp --name snmptrap-receiver -v $PWD/snmp:/var/log/snmp lidaheemc/docker-snmp
     
 Send a test trap
 
