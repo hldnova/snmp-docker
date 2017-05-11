@@ -7,7 +7,7 @@ MAINTAINER Lida He, https://github.com/hldnova
 # Install software required for Elastalert
 RUN apt update && \
     apt install -y --no-install-recommends \
-        snmp snmpd snmptrapd  && \
+        snmp snmpd snmptrapd snmp-mibs-downloader && \
 
 # Clean up.
     rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf ~/.cache 
