@@ -1,6 +1,6 @@
 # Docker image for snmp on Ubuntu Linux.
 
-FROM supervisord
+FROM lidaheemc/supervisord
 
 MAINTAINER Lida He, https://github.com/hldnova
 
